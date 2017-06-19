@@ -30,7 +30,7 @@
             <label th:for="location">Location</label>
             <select th:field="*{location}">
                 <option th:each="loc : *{locations}"
-                        th:value="${loc.id}"
+                        th:value="${loc.value}"
                         th:text="${loc.value}"></option>
             </select>
         </div>
@@ -38,7 +38,7 @@
             <label th:for="skill">Skill</label>
             <select th:field="*{skill}">
                 <option th:each="skill : *{coreCompetencies}"
-                        th:value="${skill.id}"
+                        th:value="${skill.value}"
                         th:text="${skill.value}"></option>
             </select>
         </div>
@@ -47,7 +47,7 @@
             <label th:for="positionType">Position Type</label>
             <select th:field="*{positionType}">
                 <option th:each="posType : *{positionTypes}"
-                        th:value="${posType.id}"
+                        th:value="${posType.value}"
                         th:text="${posType.value}"></option>
             </select>
         </div>
