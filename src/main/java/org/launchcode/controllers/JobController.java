@@ -49,7 +49,7 @@ public class JobController {
             Job newJob = new Job(jobForm.getName(), jobForm.getEmployer(), jobForm.getLocation(), jobForm.getPositionType(), jobForm.getSkill());
             jobData.add(newJob);
             model.addAttribute("job",newJob);
-            return "job-detail";
+            return "redirect:/job/?id="+newJob.getId();
         }
     }
 }
